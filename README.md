@@ -3,7 +3,7 @@
 Desktop application for the management, search and tracking of book loans for a school library.
 
 <p align="center">
-  <img src="/.github/resources/stormbook.png" width="auto" height="auto" title="Representative image of the home screen of the app." />
+  <img src=".github/resources/stormbook.PNG" width="auto" height="auto" title="Representative image of the home screen of the app." />
 </p>
 
 ## Compilation
