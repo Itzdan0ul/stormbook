@@ -3,7 +3,7 @@
 Aplicación de escritorio para la gestión, búsqueda y seguimiento de préstamos de libros para una biblioteca escolar.
 
 <p align="center">
-  <img src=".github/resources/stormbook.png" width="auto" height="auto" title="Imagen representativa de la pantalla de inicio de la app." />
+  <img src=".github/resources/stormbook.PNG" width="auto" height="auto" title="Imagen representativa de la pantalla de inicio de la app." />
 </p>
 
 ## Compilación
