@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.stage.Stage?>
+
+<Stage fx:id="addBookWindow" resizable="false" title="Stormbook - Agregar nuevo libro" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upiicsa.stormbook.controllers.AddBookController">
+    <scene>
+        <Scene>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="420.0">
+   <children>
+      <TextField fx:id="isbnTextField" layoutX="14.0" layoutY="67.0" prefHeight="30.0" prefWidth="191.0" promptText="ISBN" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="15.0" layoutY="50.0" text="ISBN:" AnchorPane.leftAnchor="15.0" />
+      <Text fill="#333333" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar libro" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="15.0" layoutY="110.0" text="Nombre:" AnchorPane.leftAnchor="15.0" />
+      <TextField fx:id="nameTextField" layoutX="15.0" layoutY="131.0" prefHeight="30.0" prefWidth="191.0" promptText="Nombre" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="214.0" />
+      <Label layoutX="214.0" layoutY="110.0" text="Autor:" />
+      <TextField fx:id="authorTextField" layoutX="170.0" layoutY="131.0" prefHeight="30.0" prefWidth="191.0" promptText="Autor" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="171.0" text="Editorial:" />
+      <TextField fx:id="publisherTextField" layoutX="15.0" layoutY="190.0" prefHeight="30.0" prefWidth="191.0" promptText="Editorial" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="214.0" layoutY="171.0" text="Páginas:" />
+      <Button layoutX="325.0" layoutY="366.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="30.0" prefWidth="80.0" text="Agregar" AnchorPane.bottomAnchor="15.0" />
+      <Button layoutX="237.0" layoutY="366.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="30.0" prefWidth="80.0" text="Cancelar" AnchorPane.bottomAnchor="15.0" />
+      <ChoiceBox fx:id="categoryNameChoiceBox" layoutX="156.0" layoutY="70.0" onMouseEntered="#onSelectCategory" prefHeight="30.0" prefWidth="191.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="216.0" layoutY="50.0" text="Categoría:" />
+      <TextField fx:id="pagesTextField" layoutX="214.0" layoutY="190.0" prefHeight="30.0" prefWidth="191.0" promptText="Páginas" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
